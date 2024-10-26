@@ -1,0 +1,836 @@
+/* Edurne Marco Garcia */
+
+/* Montserrat typography */
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-semibold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Afacad typography */
+
+.afacad-flux- {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+  
+
+/* General styles */
+
+
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+    margin: 0;
+    color: black;
+} 
+
+/* Mobile styles */
+
+/* INDEX */
+
+/* Header */
+
+.telefono:before {
+    content: url("../img/phone.svg");
+    transform: scale(0.8);
+    padding-right: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.email:before{
+    content: url("../img/mail.svg");
+    transform: scale(0.8);
+    padding-right: 0.2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.contacto {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 0.5rem;
+    border-bottom: 0.05rem solid #000;
+}
+.logo-menu {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    border-bottom: 0.05rem solid #000;
+    height: 3rem;
+}
+.datos-contacto{
+    display: inline-flex;
+    gap: 1rem;
+}
+.datos-contacto a{
+    font-size: 14px;
+}
+#menustate, nav ul, nav .close {
+    display: none;
+}
+:is(#menustate:checked, #menustate:target) ~ nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: white;
+    height: 100vh;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: left;
+    padding-top: 5rem;
+    padding-inline: 2rem;
+    z-index: 1;
+}
+:is(#menustate:checked, #menustate:target) ~ nav :is(.close){
+    display: block;
+    font-size: 30px;
+    color: black;
+}
+:is(#menustate:checked, #menustate:target) ~ nav :is(ul){
+    display: block;
+}
+:is(#menustate:checked, #menustate:target) ~ nav .open{
+    display: none;
+}
+nav li a{
+    color:black;
+}
+nav li.home a:hover{
+    color: #F0DF78;
+} 
+
+nav li.category a:hover{
+    color:#F0C278;
+}
+
+nav li.social a:hover{
+    color:#7890F0;
+
+}
+nav li.culture a:hover{
+    color:#AEC18C;
+
+}
+nav li.links a:hover{
+    color: #A898D3;
+   
+}
+nav ul{
+    list-style-type: none;
+    line-height: 2rem;
+
+}
+nav li{
+    font-weight: 500;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    background-image: url("../img/tapia3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100px;
+    min-height: 50px;
+    color: white;
+}
+.content{
+    width:96%;
+    max-width:1200px;
+    margin:0 auto;
+}
+.logo-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+.redes-sociales a{
+    padding: 0.1rem;
+}
+nav{
+    font-size: 1rem;
+    color: white;
+    text-align: right;
+    padding-right: 1.5rem;
+}
+.header-elements{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+h1{
+    font-family: "Afacad Flux", sans-serif;
+    margin-bottom: 2rem;
+    font-size:45px;
+    color: #7890F0;
+}
+.recuadro-busqueda{
+    background-color: #EDEDED;
+    border-radius: 35px;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin: auto;
+    width: 50%;
+}
+.header-top {
+    margin: 0 auto;
+}
+.header-top p{
+    color: #7890F0;
+    font-size: 2rem;
+    margin-top: 0;
+} 
+.recuadro-busqueda p{
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.recuadro-busqueda button{
+    background-color: #7890F0;
+    border-radius: 21px;
+    padding: 0.5rem 1rem 0.5rem 0.3rem;
+    color: white;
+    border:none;
+    box-shadow: none;
+    position: relative;
+    right:8px;
+}
+.recuadro-busqueda button:hover {
+    background-color: white;
+    color: black;
+}
+
+.recuadro-busqueda button:before{
+    content: url("../img/search.svg");
+    transform: scale(0.7);
+    padding-right: 0.5rem;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5rem;  
+    max-height: max-content;
+}
+.elemento1, .elemento2, .elemento3 {
+    flex: 1 200px;
+    margin-bottom: 3rem;
+    background-color: white;
+    opacity: 0.8;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+.info p{
+    color: black;
+} 
+
+.headline {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Courses */
+h2{
+    font-size: 1.5rem;
+    color:#7890F0;
+}
+.eventos, .category, .eventos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    align-items: stretch;
+    margin-bottom: 3rem;
+}
+.category {
+    grid-column-gap: 0;
+    margin-bottom: 7rem;
+}
+.eventos a{
+    height: 100%;
+}
+.evento{
+    border-radius: 10px;
+    border:  black solid 0.2px;
+    overflow: hidden;
+    height: 100%;
+}
+.evento:hover{
+    background-color: #7890F0;
+}
+.evento:hover p{
+    color: white;
+}
+.superior {
+    background-size: cover;
+    min-height: 150px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.inferior{
+    padding: 1rem;
+}
+.tituloEvento{
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: black;
+    margin: 0;
+}
+
+.center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+} 
+.center a, .left a, .right a, .apply a{
+    color:  black;
+    background-color: transparent;
+    border:  black solid 0.2px;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+.center a:hover, .left a:hover, .right a:hover, .apply a:hover{
+    background-color:  #7890F0;
+    border: none;
+    color:  white;
+} 
+
+/* Footer */
+.section-footer {
+    background-color:#7890F0;
+}
+.content-footer{
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.content-footer .footer-area{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+}
+.content-footer a{
+    color: white;
+    text-decoration: none;
+}
+.content-footer a:hover{
+    text-decoration: underline;
+}
+.content-footer form{
+    background-color: #FFFFFF33;
+    padding: .5rem;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-footer form input.email{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 0;
+}
+.content-footer form input.email:focus-visible{
+    outline: none;
+}
+.content-footer form input.email::placeholder{
+    color: white;
+}
+.content-footer form button{
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 0.2rem;
+}
+.content-footer form button:hover{
+    background-color:#F0C278;
+}
+.content-footer form button:hover img{
+    filter:brightness(100);
+}
+.enlaces{
+    margin-top: 2rem;
+    display: inline-flex;
+    margin-bottom: 2rem;
+}
+.enlaces a{
+    padding-right: 1rem;
+}
+p#hiddenMessage {
+    padding-left: 1rem;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+}
+.copyright button{
+    height: 3em;
+    background-color: #EDEDED;
+    border-radius: 1rem;
+    border: none;
+    padding: 0rem 1rem;
+}
+.copyright button:hover{
+    background-color: #FFFFFF33;
+    border-radius: 1rem;
+    border: solid white 1px;
+    color: white;
+}
+.enlaces a{
+    font-size: 13px;
+}
+.logo {
+    text-align: center;
+}
+.logo img{
+    margin-bottom: 1rem;
+}
+.logo p{
+    margin: 0;
+    font-weight: 500;
+}
+.logo a{
+    font-weight: 400;
+}
+
+/* PRESENTACION */
+
+.category h2{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.category p{
+    font-size: 0.8rem;
+    color: black
+}
+.category .categoria1{
+    margin-top: 3rem;
+    background-color: #F0C278;
+}
+.category .categoria2{
+    margin-top: 3rem;
+    background-color: #7890F0 ;
+}
+.category .categoria3{
+    margin-top: 3rem;
+    background-color: #AEC18C;
+}
+.category .categoria4{
+    margin-top: 3rem;
+    background-color:#A898D3;
+}
+.categoria1:hover{
+    background-color: #F0C278;
+    box-shadow: none;  
+}
+.categoria2:hover{
+    background-color: #7890F0;
+    box-shadow: none;   
+}
+.categoria3:hover{
+    background-color: #AEC18C;
+    box-shadow: none;   
+}
+.categoria4:hover{
+    background-color: #A898D3;
+    box-shadow: none;   
+}
+.categoria:hover p, .categoria:hover h2{
+    color: white;
+}
+
+/* EVENTOS - CULTURE */
+
+.culture h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.culture h2{
+    font-size: 1rem;
+    color: black;
+    font-weight: 400;
+}
+.culture .eventos p{
+    font-size: 0.8rem;
+}
+
+.eventos .categoria1{
+    background-color: white;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.eventos .categoria1:hover{
+    background-color: #7890F0;
+    color: white;
+    border: none;
+}
+.eventos .categoria1:hover .category h2{
+    color: white;
+}
+/* EXPO */
+.expo h1 {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 2rem;
+    color: #7890F0;
+    margin-bottom: 1rem;
+}
+.expo h2 {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 15px;
+    color: black;
+    margin: 0;
+}
+h3, legend{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+blockquote {
+    border: solid black;
+    border-width: 0px 1px;
+    margin: 0em 4em 0em 4em;
+    padding: 1em;
+    margin: 2rem 0;
+}
+
+blockquote p {
+    font-style: italic;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.expo-left img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+.description a[href^="mailto"] {
+    color:#005bbf;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: none;
+}
+.expo a[href^="mailto"]:hover {
+    text-decoration: underline;
+    font-size: 15px;
+    border-bottom: none;
+    color:#005bbf;
+    font-weight: 400;
+}
+.expo-form{
+    background-color: #7890F0;
+    color: white;
+    border-radius: 21px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.expo-left ul{
+    padding: 0;
+}
+.expo-left {
+    margin-bottom: 3rem;
+}
+.expo-left ul li{
+    font-weight: 600;
+}
+.expo-right{
+    margin-bottom: 4rem;
+}
+form {
+    margin-left: 0;
+}
+form ul,li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+input {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+option{
+    color:black;
+}
+fieldset, legend {
+    border:none;
+    padding: 0;
+    margin: 0;
+}
+form abbr {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+li.two-row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+select#course-area{
+    margin-top: 1rem;
+    width: 100%;
+}
+.outFieldset {
+    margin-top: 1rem;
+    max-width: fit-content;
+} 
+.outFieldset a{
+    color: white;
+}
+.outFieldset a:hover {
+    text-decoration: underline;
+}
+.outFieldset button {
+    width: 100%;
+    margin-top: 1rem;
+    color: black;
+    background-color: #EDEDED;
+    border-radius: 10px;
+    padding: 0.8rem;
+    border: none;
+    box-shadow: none;
+    border: solid white 1px;
+}
+.outFieldset button:hover {
+    background-color: #FFFFFF33;
+    border: solid white 1px;
+    color: white;
+}
+
+/* Tablet styles */
+@media (min-width: 544px) {
+    h1{
+        font-family: "Afacad Flux", sans-serif;
+        margin-bottom: 0;
+        font-size: 55px;
+    }
+    nav li{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .contacto .content{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .datos-contacto{
+        text-align: left;
+    }
+    .redes-sociales{
+        text-align: right;
+        margin-top: 0.5rem;
+    }
+    .expo h1{
+        font-family: "Afacad Flux", sans-serif;
+        font-size: 2rem;
+        color: #7890F0;
+    }
+    .expo h2{
+        font-size: 24px;
+        color: black;
+    }
+    .article-small p, .article-small li, .article-small a{
+        font-size: 15px;
+    }
+    
+    /* EVENTOS */
+    .eventos, .category {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    /* CATEGORY */
+    .category-content .categories{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    /* EXPO FORM */
+    .expo-form{
+        width: 70%;
+        margin: auto;
+    }
+
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+    /* Font sizes */
+    .texto-content h3{
+        font-size: 60px;
+    }
+    .izquierda h3{
+        font-size: 60px;
+        line-height: 4rem;
+    }
+    /* Show the menu */
+    nav{
+        padding-right: 0;
+    } 
+    nav ul {
+        display: flex;
+    }
+    nav .open, nav .close{
+        display: none;
+    }
+    nav ul li{
+        margin-inline: 1rem;
+        font-weight: 700;
+        font-size: 0.9rem;
+        border: 0.05rem solid #000;
+    }
+  
+    .info{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .contacto a{
+        color: black;
+    } 
+    nav li:hover{
+        background-color: white;
+    } 
+    nav li:hover a, nav li a:hover{
+        color: black; 
+    }
+    nav li a{
+        color:white;
+    }
+    nav li a:hover{
+        color:black;
+    }
+    li.home{
+        background-color: #F0DF78;
+        margin: 0;
+        padding: 0 2rem 0 2rem;
+    } 
+    li.categoria{
+        background-color:#F0C278;
+        margin: 0;
+        padding: 0 2rem 0 2rem;
+    }
+    li.social{
+        background-color:#7890F0;
+        margin: 0;
+        padding: 0 2rem 0 2rem;
+    }
+    li.culture{
+        background-color:#AEC18C;
+        margin: 0;
+        padding: 0 2rem 0 2rem;
+    }
+    li.links{
+        background-color: #A898D3;
+        margin: 0;
+        padding: 0 2rem 0 2rem;
+    }
+    li.current, li.current:hover{
+        background-color: white;
+        border: 0.01rem solid black;
+        margin: 0;
+        padding: 0 2rem 0 2rem;
+    }
+    li.current a {
+        color: black;
+
+    }
+    .sign a{
+        background-color: white;
+        color: #005bbf;
+        border-radius: 21px;
+        padding: 0.5rem;
+    }
+    .sign a:hover{
+        color: white;
+        background-color: #005bbf;
+    } 
+     .category-content .categories{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    /* EVENTOS */
+    .eventos {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .category {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    /* CATEGORY */
+    .category-content .categories{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .category-content .categories .category.big { grid-area: 1 / 3 / 3 / 4; }
+    /* FOOTER */
+    .content-footer .footer-area {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* EXPO FORM */
+        .expo-elements{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: space-between;
+        } 
+        .expo-right{
+            width: 30%;
+            margin:0;
+            padding-bottom: 4rem;
+        }
+        .expo-left{
+            width: 70%;
+        }
+        .expo-form {
+            position: sticky;
+            top:0;
+        }
+}
+

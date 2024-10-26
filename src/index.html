@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapia</title>
+    <meta name="description" content="Main page of the Mairie of Biarritz">
+    <meta name="author" content="Edurne Marco García">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="contacto">
+            <div class="content">
+                <div class="datos-contacto">
+                    <div class="telefono">
+                        <a href="tel:(34)0559415941">(34) 05 59 41 59 41</a>
+                    </div>
+                    <div class="email">
+                        <a href=mailto:info@tapia.es>info@tapia.es</a>
+                    </div>
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/tapia" target="_blank"><img src="img/facebook.svg" alt="Link to Facebook" width="15" height="15"></a>
+                    <a href="https://www.instagram.com/@tapia" target="_blank"><img src="img/instagram.svg" alt="Link to Instagram" width="15" height="15"></a>
+                </div>
+            </div>
+        </div>
+        <div class="logo-menu">
+          <a href="index.html"><img src="img/tapia-negro.png" height="30" width="auto" alt="logotipo de Tapia que redirigue a la página principal"></a>
+          <input aria-hidden="true" type="checkbox" id="menustate">
+          <nav>
+              <label for="menustate" aria-hidden="true">
+                  <span class="open" title="open menu">
+                      <a role="button" class="open" href="#menustate">
+                          <span></span>
+                      </a>
+                      <svg width="24px" height="24px" viewBox="0 0 24 24" focusable="false" >
+                          <path d="M21 11h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+                          <path d="M3 7h18c0.6 0 1-0.4 1-1s-0.4-1-1-1h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1z"></path>
+                          <path d="M21 17h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+                      </svg>    
+                  </span>
+                  <span class="close" title="close menu">X</span>
+                  <a role="button" class="close" href="#">
+                      <span></span>
+                  </a>
+              </label>
+              <ul>
+                  <li class="current"><a href="index.html">INICIO</a></li>
+                  <li class="categoria"><a href="presentacion.html">PRESENTACIÓN</a></li>
+                  <li class="social"><a href="#">SOCIAL</a></li>
+                  <li class="culture"><a href="culture.html">CULTURA</a></li>
+                  <li class="links"><a href="enlaces.html">ENLACES</a></li>   
+              </ul>
+          </nav>
+      </div>
+        <div class="content">  
+            
+            <div class="header-elements">
+                <div class="header-top">
+                    <h1>TAPIA DE CASARIEGO</h1>
+                    <p>Donde el mar, la naturaleza y la tradición se unen</p>
+                    <div>
+                        <div class="recuadro-busqueda">
+                            <p>¿Qué estás buscando?</p>
+                            <button type="submit">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="elemento1">
+                        <p class="headline">Tradición Pesquera</p>
+                        <p>Su puerto pesquero es el corazón de la localidad, donde la tradición y la gastronomía se entrelazan</p>
+                    </div>
+                    <div class="elemento2">
+                        <p class="headline">Playas paradisíacas</p>
+                        <p>Las playas de Tapia son ideales para disfrutar del sol, practicar surf y pasear por su hermoso litoral</p>
+                    </div>
+                    <div class="elemento3">
+                        <p class="headline">Fiestas populares</p>
+                        <p>Las festividades, como la Fiesta del Mar, son una celebración de la comunidad y sus tradiciones</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </header>
+    <main id="main">
+        <section class="content">
+            <h2> Novedades y noticias </h2>
+            <p> Estas son las últimas novedades y la programación de los próximos días</p>
+            <div class="eventos">
+                <a href="#" title="link to the event page"><div class="evento" >
+                    <div class="superior" style="background-image: url(img/tapia-cocina.jpg)">
+                    </div>        
+                    <div class="inferior">
+                        <p class="tituloEvento">
+                            Curso de cocina asturiana para principiantes
+                        </p>
+                    </div>
+                </div></a>
+                <a href="#" title="link to the event page"><div class="evento" >
+                    <div class="superior" style="background-image: url(img/tapia-expo.jpg)">
+                    </div>
+                    <div class="inferior">
+                        <p class="tituloEvento">
+                            Exposición fotográfica "De cerca" 
+                        </p>
+                    </div>
+                </div></a>
+                <a href="#" title="link to the event page"><div class="evento" >
+                    <div class="superior" style="background-image: url(img/tapia-faro.jpg)">
+                    </div>
+                    <div class="inferior">
+                        <p class="tituloEvento">
+                            Se abre la preinscipción para la beca de residencia artística "El Faro"
+                        </p>
+                    </div>
+                </div></a>
+                <a href="#" title="link to the event page"><div class="evento" >
+                    <div class="superior" style="background-image: url(img/tapia-marinas.jpg)">
+                    </div>
+                    <div class="inferior">
+                        <p class="tituloEvento">
+                            Curso de creaciones marinas con material reciclado
+                        </p>
+                    </div>
+                </div></a>
+                <a href="#" title="link to the event page"><div class="evento" >
+                    <div class="superior" style="background-image: url(img/tapia-feria.jpg)">
+                    </div>
+                    <div class="inferior">
+                        <p class="tituloEvento">
+                            Feria de artesanía el fin de semana
+                        </p>
+                    </div>
+                </div></a>
+                <a href="#" title="link to the event page"><div class="evento" >
+                    <div class="superior" style="background-image: url(img/tapia-surf.jpg)">
+                    </div>
+                    <div class="inferior">
+                        <p class="tituloEvento">
+                            Charla "Leer las olas" en la tienda Picante Surf
+                        </p>
+                    </div>
+                </div></a>
+                <a href="#" title="link to the event page"><div class="evento" >
+                    <div class="superior" style="background-image: url(img/tapia-limpiar-playas.jpg)">
+                    </div>
+                    <div class="inferior">
+                        <p class="tituloEvento">
+                            Apúntate al voluntario para limpiar las playas cercanas
+                        </p>
+                    </div>
+                </div></a>
+                <a href="#" title="link to the event page"><div class="evento" >
+                    <div class="superior" style="background-image: url(img/tapia-polideportivo.jpg)">
+                    </div>
+                    <div class="inferior">
+                        <p class="tituloEvento">
+                            Así ha quedado el nuevo polideportivo
+                        </p>
+                    </div>
+                </div></a>
+            </div>
+            <div class="center">
+                <a href="#">Ver más novedades</a>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="section-footer">
+            <div class="content content-footer">
+                <div class="footer-area">
+                    <div class="suscribe">
+                        <p>SUBSCRíBETE AL BOLETÍN INFORMATIVO</p>
+                        <form action="#" method="post">
+                            <input type="email" class="email" placeholder="Tu correo electrónico">
+                            <button class="submit"><img src="img/arrow.-right.svg" title="submit"></button>
+                        </form>
+                        <div class="enlaces">
+                            <a href="#">Ayuda</a>
+                            <a href="#">Privacidad</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">Segurdad</a>
+                            <a href="#">Términos</a>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <img src="img/tapia-blanco.png" height="80" width="auto" alt="Logotipo Tapia de Casariego">
+                        <p>Teléfono atención al ciudadano <a href="tel:(34)0559415941">(34) 05 59 41 59 41</a></p>
+                        <p>Correo atención al ciudadano <a href=mailto:info@tapia.es>info@tapia.es</a></p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <button type="button" onclick="revealMessage()">Ver autora de la página web:</button>
+                    <p id="hiddenMessage" style="display:none">Edurne Marco García</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
