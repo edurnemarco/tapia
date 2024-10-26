@@ -222,14 +222,6 @@ h1{
     color: black;
 }
 
-.recuadro-busqueda button:before{
-    content: url("../img/search.svg");
-    transform: scale(0.7);
-    padding-right: 0.5rem;
-    color: white;
-    display: inline-block;
-    vertical-align: middle;
-}
 .info{
     display: flex;
     flex-wrap: wrap;
