@@ -151,7 +151,7 @@ a{
     text-decoration: none;
 }
 header{
-    background-image: url("../img/tapia3.JPG");
+    background-image: url("../img/tapia3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100px;
@@ -217,16 +217,6 @@ h1{
     margin-bottom: 0;
 }
 
-.recuadro-busqueda button{
-    background-color: #7890F0;
-    border-radius: 21px;
-    padding: 0.5rem 1rem 0.5rem 0.3rem;
-    color: white;
-    border:none;
-    box-shadow: none;
-    position: relative;
-    right:8px;
-}
 .recuadro-busqueda button:hover {
     background-color: white;
     color: black;
