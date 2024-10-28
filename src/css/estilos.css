@@ -48,20 +48,6 @@ body {
 
 /* Header */
 
-.telefono:before {
-    content: url("../img/phone.svg");
-    transform: scale(0.8);
-    padding-right: 0.5rem;
-    display: inline-block;
-    vertical-align: middle;
-}
-.email:before{
-    content: url("../img/mail.svg");
-    transform: scale(0.8);
-    padding-right: 0.2rem;
-    display: inline-block;
-    vertical-align: middle;
-}
 .contacto {
     background-color: white;
     display: flex;
@@ -81,9 +67,15 @@ body {
 .datos-contacto{
     display: inline-flex;
     gap: 1rem;
+    justify-content: space-around;
+    width: 100%;
 }
 .datos-contacto a{
-    font-size: 14px;
+    font-size: 0.8rem;
+    color: black;
+}
+.redes-sociales{
+    display: inline-flex;
 }
 #menustate, nav ul, nav .close {
     display: none;
@@ -203,6 +195,16 @@ h1{
     margin: auto;
     width: 50%;
 }
+.recuadro-busqueda button{
+    background-color: #7890F0;
+    border-radius: 21px;
+    padding: 0.5rem 1rem;
+    color: white;
+    border:none;
+    box-shadow: none;
+    position: relative;
+    right:8px;
+}
 .header-top {
     margin: 0 auto;
 }
@@ -253,7 +255,7 @@ h2{
     font-size: 1.5rem;
     color:#7890F0;
 }
-.eventos, .category, .eventos{
+.eventos, .eventos{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 1fr);
@@ -264,6 +266,12 @@ h2{
 }
 .category {
     grid-column-gap: 0;
+    margin-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    align-items: stretch;
     margin-bottom: 7rem;
 }
 .eventos a{
@@ -304,7 +312,7 @@ h2{
     margin-bottom: 3rem;
 
 } 
-.center a, .left a, .right a, .apply a{
+.center a {
     color:  black;
     background-color: transparent;
     border:  black solid 0.2px;
@@ -313,9 +321,9 @@ h2{
     border-radius: 10px;
     margin-top: 1rem;
 }
-.center a:hover, .left a:hover, .right a:hover, .apply a:hover{
+.center a:hover{
     background-color:  #7890F0;
-    border: none;
+    border:  white solid 0.2px;
     color:  white;
 } 
 
@@ -373,16 +381,23 @@ h2{
 .content-footer form button:hover img{
     filter:brightness(100);
 }
+.suscribe p{
+    text-align: center;
+    font-size: 0.8rem;
+}
 .enlaces{
     margin-top: 2rem;
     display: inline-flex;
     margin-bottom: 2rem;
+    width: 100%;
+    justify-content: space-evenly;
 }
 .enlaces a{
     padding-right: 1rem;
 }
 p#hiddenMessage {
     padding-left: 1rem;
+    font-size: 0.8rem;
 }
 .copyright{
     display: flex;
@@ -394,6 +409,7 @@ p#hiddenMessage {
     border-radius: 1rem;
     border: none;
     padding: 0rem 1rem;
+    font-size: 0.8rem;
 }
 .copyright button:hover{
     background-color: #FFFFFF33;
@@ -402,7 +418,7 @@ p#hiddenMessage {
     color: white;
 }
 .enlaces a{
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 .logo {
     text-align: center;
@@ -413,9 +429,11 @@ p#hiddenMessage {
 .logo p{
     margin: 0;
     font-weight: 500;
+    font-size: 0.8rem;
 }
 .logo a{
     font-weight: 400;
+    font-size: 0.8rem;
 }
 
 /* PRESENTACION */
@@ -641,7 +659,7 @@ select#course-area{
         justify-content: space-between;
     }
     .datos-contacto{
-        text-align: left;
+        justify-content: flex-start;
     }
     .redes-sociales{
         text-align: right;
@@ -661,14 +679,19 @@ select#course-area{
     }
     
     /* EVENTOS */
-    .eventos, .category {
+    .eventos {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+
     /* CATEGORY */
     .category-content .categories{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
+    }
+    .category {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
     /* EXPO FORM */
     .expo-form{
@@ -779,11 +802,11 @@ select#course-area{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+    /* CATEGORY */
     .category {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
-    /* CATEGORY */
     .category-content .categories{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
