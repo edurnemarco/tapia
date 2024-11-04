@@ -442,7 +442,7 @@ p#hiddenMessage {
 }
 
 .category p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: black
 }
 .category .categoria1{
@@ -493,7 +493,7 @@ p#hiddenMessage {
     font-weight: 400;
 }
 .culture .eventos p{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .eventos .categoria1{
@@ -523,6 +523,9 @@ p#hiddenMessage {
     font-size: 15px;
     color: black;
     margin: 0;
+}
+.related h2{
+    margin-top: 2rem;
 }
 h3, legend{
     font-size: 18px;
@@ -808,6 +811,11 @@ article li {
     .eventos {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+    .related .eventos{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-top: 1rem;
     }
     /* CATEGORY */
     .category {
