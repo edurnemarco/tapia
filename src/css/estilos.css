@@ -255,11 +255,11 @@ h2{
 .eventos, .eventos{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     align-items: stretch;
     margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 .category {
     grid-column-gap: 0;
