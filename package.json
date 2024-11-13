@@ -25,11 +25,5 @@
     "default": {
       "publicUrl": "./"
     }
-  },
-  "dependencies": {
-    "font-awesome": "^4.7.0",
-    "image-resize": "^1.4.1",
-    "node-image-resizer": "^1.0.0",
-    "sharp": "^0.33.5"
   }
 }
