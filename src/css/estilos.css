@@ -22,7 +22,6 @@
 
 .afacad-flux- {
     font-family: "Afacad Flux", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-variation-settings: "slnt" 0;
@@ -575,9 +574,6 @@ blockquote p {
 }
 .expo-left {
     margin-bottom: 3rem;
-}
-.expo-left ul li{
-    font-weight: 600;
 }
 .expo-right{
     margin-bottom: 4rem;
