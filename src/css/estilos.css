@@ -652,11 +652,10 @@ article ol{
     margin-bottom: 4rem;
 }
 article li a{
-    color: white;
-    text-decoration: underline;
+    color:black;
 }
 article li a:hover{
-    text-decoration: none;
+    text-decoration: underline;
 }
 article li {
     line-height: 2rem;
