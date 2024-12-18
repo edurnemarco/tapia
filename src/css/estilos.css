@@ -26,7 +26,6 @@
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
-  
 
 /* General styles */
 
@@ -53,6 +52,7 @@ body {
     padding: 0.5rem;
     border-bottom: 0.05rem solid #000;
 }
+
 .logo-menu {
     background-color: white;
     display: flex;
@@ -61,6 +61,32 @@ body {
     border-bottom: 0.05rem solid #000;
     height: 3rem;
 }
+
+.logo-menu a:hover {
+    animation-name: bounce;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+  
 .datos-contacto{
     display: inline-flex;
     gap: 1rem;
@@ -139,12 +165,13 @@ a{
     text-decoration: none;
 }
 header{
-    background-image: url("../img/tapia-fondo.jpg");
+    background-image: url("../img/tapia-fondo-movil.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100px;
     min-height: 50px;
     color: white;
+    background-position: center;
 }
 .content{
     width:96%;
@@ -171,10 +198,13 @@ nav{
     text-align: center;
     margin-bottom: 2rem;
 }
+.header-top h1{
+    color: white;
+}
 h1{
     font-family: "Afacad Flux", sans-serif;
     margin-bottom: 2rem;
-    font-size:45px;
+    font-size: 2rem;
     color: #7890F0;
 }
 .recuadro-busqueda{
@@ -189,7 +219,7 @@ h1{
     margin-bottom: 3rem;
     max-width: 600px;
     margin: auto;
-    width: 50%;
+    width: 70%;
 }
 .recuadro-busqueda button{
     background-color: #7890F0;
@@ -200,19 +230,19 @@ h1{
     box-shadow: none;
     position: relative;
     right:8px;
+    font-size: 0.8rem;
 }
 .header-top {
     margin: 0 auto;
 }
-.header-top p{
-    color: #7890F0;
-    font-size: 2rem;
+.header-top > p{
+    font-size: 1.5rem;
     margin-top: 0;
 } 
 .recuadro-busqueda p{
-    color: black;
-    font-size: 1rem;
-    margin-bottom: 0;
+    color: #7890F0;
+    font-size: 0.8rem;
+    margin: 0;
 }
 
 .recuadro-busqueda button:hover {
@@ -225,25 +255,29 @@ h1{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin-top: 5rem;  
+    margin-top: 1rem;
+    padding-bottom: 1rem;  
     max-height: max-content;
 }
 .elemento1, .elemento2, .elemento3 {
     flex: 1 200px;
     margin-bottom: 3rem;
-    background-color: white;
+    background-color: rgb(120, 144, 240, .6);
     opacity: 0.8;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
     border-radius: 3rem;
+    font-size: 0.9rem;
 }
 .info p{
-    color: black;
+    color: white;
 } 
 
-.headline {
-    font-size: 1rem;
+.info .headline {
+    font-size: 0.9rem;
     margin-bottom: 0.8rem;
+    color: white;
+    font-weight: 700;
 }
 
 /* Eventos */
@@ -275,9 +309,9 @@ h2{
 }
 .evento{
     border-radius: 10px;
-    border:  black solid 0.2px;
     overflow: hidden;
     height: 100%;
+    border: 0.5px solid black;
 }
 .evento:hover{
     background-color: #7890F0;
@@ -290,10 +324,12 @@ h2{
     min-height: 150px;
     position: relative;
     background-repeat: no-repeat;
+    background-position-y: 30%;
 }
 .inferior{
     padding: 1rem;
 }
+
 .tituloEvento{
     margin-bottom: 0;
     font-size: 1rem;
@@ -444,40 +480,30 @@ p#hiddenMessage {
     font-size: 1rem;
     color: black
 }
-.category .categoria1{
-    margin-top: 3rem;
-    background-color: #F0C278;
+.category:hover p{
+    color: black;
 }
-.category .categoria2{
+.category .categoria1, .category .categoria2, .category .categoria3, .category .categoria4 {
     margin-top: 3rem;
-    background-color: #7890F0 ;
+    clip-path: none;
+    transition: clip-path 1s ease;
+    border: none;
 }
-.category .categoria3{
-    margin-top: 3rem;
-    background-color: #AEC18C;
-}
-.category .categoria4{
-    margin-top: 3rem;
-    background-color:#A898D3;
-}
-.categoria1:hover{
+.categoria1, .categoria1:hover{
     background-color: #F0C278;
     box-shadow: none;  
 }
-.categoria2:hover{
+.categoria2, .categoria2:hover{
     background-color: #7890F0;
     box-shadow: none;   
 }
-.categoria3:hover{
+.categoria3, .categoria3:hover{
     background-color: #AEC18C;
     box-shadow: none;   
 }
-.categoria4:hover{
+.categoria4, .categoria4:hover{
     background-color: #A898D3;
     box-shadow: none;   
-}
-.categoria:hover p, .categoria:hover h2{
-    color: white;
 }
 
 /* EVENTOS - CULTURA */
@@ -494,7 +520,6 @@ p#hiddenMessage {
 .culture .eventos p{
     font-size: 1rem;
 }
-
 .eventos .categoria1{
     background-color: white;
     color: black;
@@ -507,9 +532,10 @@ p#hiddenMessage {
     color: white;
     border: none;
 }
-.eventos .categoria1:hover .category h2{
+.eventos .categoria1:hover  h2{
     color: white;
 }
+
 /* EXPO */
 .expo h1 {
     font-family: "Afacad Flux", sans-serif;
@@ -525,6 +551,9 @@ p#hiddenMessage {
 }
 .related h2{
     margin-top: 2rem;
+}
+.related .superior {
+    background-position: center;
 }
 h3, legend{
     font-size: 18px;
@@ -665,7 +694,7 @@ article li {
     h1{
         font-family: "Afacad Flux", sans-serif;
         margin-bottom: 0;
-        font-size: 55px;
+        font-size: 45px;
     }
     nav li{
         font-size: 2rem;
@@ -681,6 +710,33 @@ article li {
     .redes-sociales{
         text-align: right;
         margin-top: 0.5rem;
+    }
+    header {
+        background-image: url("../img/tapia-fondo.jpg");
+    }
+    .header-top p{
+        margin-top: 0;
+    }
+    .elemento1, .elemento2, .elemento3 {
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .elemento3{
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+    .info .headline{
+        font-size: 1.5rem;
+    }
+    .info{
+        margin-top: 3rem;
+    }
+    .recuadro-busqueda{
+        width: 50%;
+    }
+    .recuadro-busqueda p {
+        font-size: 1rem;
     }
     .expo h1{
         font-family: "Afacad Flux", sans-serif;
@@ -800,7 +856,18 @@ article li {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-    
+    .elemento1{
+        clip-path:ellipse(100% 100% at 100% 50%);
+    }
+    .elemento3{
+        clip-path: ellipse(100% 100% at 0% 50%);
+    }
+    .eventos .evento:hover{
+        transform: scale(1.05);
+    }
+    .recuadro-busqueda{
+        width: 50%;
+    }
     /* EVENTOS */
     .eventos {
         grid-template-columns: repeat(4, 1fr);
@@ -819,6 +886,22 @@ article li {
     .category-content .categories{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+    .category .categoria1:hover{
+        clip-path: path('M 0 3000 L 0 60 150 0, 3000 250 L 3000 3000 Z');
+        background-color: #F0C278;
+    }
+    .category .categoria2:hover{
+        background-color: #7890F0 ;
+        clip-path: path('M 0 3000 L 0 50 80 0, 3000 1350 L 3000 3000 Z');
+    }
+    .category .categoria3:hover{
+        background-color: #AEC18C;
+        clip-path: path('M 0 3000 L 0 60 60 6, 3000 650 L 3000 3000 Z');
+    }
+    .category .categoria4:hover{
+        background-color:#A898D3;
+        clip-path: path('M 0 3000 L 0 20 200 0, 3000 1350 L 3000 3000 Z');
     }
     /* FOOTER */
     .content-footer .footer-area {
