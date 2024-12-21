@@ -68,7 +68,6 @@ body {
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-direction: alternate;
-  animation-iteration-count: 3s;
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
@@ -911,22 +910,26 @@ article li {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-    .category .categoria1:hover{
-        clip-path: path('M 0 3000 L 0 60 150 0, 3000 250 L 3000 3000 Z');
+    .category .categoria1:hover {
+        clip-path: polygon(0% 100%, 0% 2%, 5% 0%, 100% 8%, 100% 100%);
         background-color: #F0C278;
     }
-    .category .categoria2:hover{
-        background-color: #7890F0 ;
-        clip-path: path('M 0 3000 L 0 50 80 0, 3000 1350 L 3000 3000 Z');
+    
+    .category .categoria2:hover {
+        background-color: #7890F0;
+        clip-path: polygon(0% 100%, 0% 2%, 3% 0%, 100% 30%, 100% 100%);
     }
-    .category .categoria3:hover{
+    
+    .category .categoria3:hover {
         background-color: #AEC18C;
-        clip-path: path('M 0 3000 L 0 60 60 6, 3000 650 L 3000 3000 Z');
+        clip-path: polygon(0% 100%, 0% 2%, 2% 0%, 100% 20%, 100% 100%);
     }
-    .category .categoria4:hover{
-        background-color:#A898D3;
-        clip-path: path('M 0 3000 L 0 20 200 0, 3000 1350 L 3000 3000 Z');
+    
+    .category .categoria4:hover {
+        background-color: #A898D3;
+        clip-path: polygon(0% 100%, 0% 5%, 7% 0%, 100% 40%, 100% 100%);
     }
+    
     /* FOOTER */
     .content-footer .footer-area {
         flex-direction: row;
