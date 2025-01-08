@@ -10,7 +10,9 @@
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build"
+    "build": "npm-run-all clean process-images parcel:build", 
+    "process-images": "node process-images.js" 
+
   },
   "keywords": [],
   "author": "Edurne_Marco_Garcia <emarco35@uoc.edu>",

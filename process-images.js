@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const inputDir = 'src/img';
-const outputDir = 'process-img';
+const outputDir = 'src/process-img';
 
 const sizes = [
   { width: 640, suffix: '-sm' },
