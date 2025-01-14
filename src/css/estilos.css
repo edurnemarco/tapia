@@ -206,7 +206,7 @@ h1{
     font-weight: 600;
 }
 .recuadro-busqueda{
-    background-color: #EDEDED;
+    background-color: #F7F7F7;
     border-radius: 35px;
     flex: 0 0 100%;
     display: flex;
@@ -238,7 +238,7 @@ h1{
     margin-top: 0;
 } 
 .recuadro-busqueda p{
-    color: #4668F1;
+    color: #1036D1;
     font-size: 0.8rem;
     margin: 0;
 }
@@ -389,12 +389,13 @@ h2{
     text-decoration: underline;
 }
 .content-footer form{
-    background-color: #FFFFFF33;
+    background-color: #7A93F5;
     padding: .5rem;
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
 }
+
 .content-footer form input.email{
     background-color: transparent;
     border: none;
@@ -405,7 +406,7 @@ h2{
     outline: none;
 }
 .content-footer form input.email::placeholder{
-    color: white;
+    color: black;
 }
 .content-footer form button{
     background-color: white;

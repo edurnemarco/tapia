@@ -13,7 +13,7 @@
     <link rel="preload" href="img/tapia-fondo.jpg" as="image" media="(min-width: 600)">
     <link rel="preload" href="img/tapia-fondo-movil.jpg" as="image" media="(max-width: 600)">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
 </head>
 <body>
     <header>
@@ -39,7 +39,7 @@
           <nav>
               <label for="menustate">
                   <span class="open" title="open menu">
-                      <a role="button" class="open" href="#menustate">
+                      <a role="button" class="open" href="#menustate" aria-label="Abrir menu">
                           <span></span>
                       </a>
                       <svg width="24px" height="24px" viewBox="0 0 24 24" focusable="false" >
@@ -49,7 +49,7 @@
                       </svg>    
                   </span>
                   <span class="close" title="close menu">X</span>
-                  <a role="button" class="close" href="#">
+                  <a role="button" class="close" href="#" aria-label="Cerrar menu">
                       <span></span>
                   </a>
               </label>
@@ -242,6 +242,7 @@
                                 </fieldset>
                                 <fieldset>
                                     <legend>Ámbito cultural <abbr title="obligatorio">*</abbr></legend>
+                                    <label for="course-area">Selecciona las áreas culturales de tu interés:</label>
                                     <select size="9" id="course-area" name="area" multiple>
                                         <option value="arte">Arte</option>
                                         <option value="teatro">Teatro</option>
