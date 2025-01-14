@@ -36,6 +36,7 @@ body {
     width: 100%;
     margin: 0;
     color: black;
+    font-display: swap;
 } 
 
 /* Mobile styles */
@@ -91,6 +92,8 @@ body {
     gap: 1rem;
     justify-content: space-around;
     width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 .datos-contacto a{
     font-size: 0.8rem;
@@ -98,6 +101,10 @@ body {
 }
 .redes-sociales{
     display: inline-flex;
+}
+.redes-sociales a {
+    padding: 0rem 0.5rem;
+    margin: 0rem 0.3rem;
 }
 #menustate, nav ul, nav .close {
     display: none;
@@ -136,12 +143,12 @@ nav li.home a:hover{
     color: #F0DF78;
 } 
 
-nav li.category a:hover{
+nav li.categoria a:hover{
     color:#F0C278;
 }
 
 nav li.social a:hover{
-    color:#7890F0;
+    color:#4668F1;
 
 }
 nav li.culture a:hover{
@@ -195,7 +202,8 @@ h1{
     font-family: "Afacad Flux", sans-serif;
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: #7890F0;
+    color: #4668F1;
+    font-weight: 600;
 }
 .recuadro-busqueda{
     background-color: #EDEDED;
@@ -212,7 +220,7 @@ h1{
     width: 70%;
 }
 .recuadro-busqueda button{
-    background-color: #7890F0;
+    background-color: #4668F1;
     border-radius: 21px;
     padding: 0.5rem 1rem;
     color: white;
@@ -230,7 +238,7 @@ h1{
     margin-top: 0;
 } 
 .recuadro-busqueda p{
-    color: #7890F0;
+    color: #4668F1;
     font-size: 0.8rem;
     margin: 0;
 }
@@ -252,7 +260,7 @@ h1{
 .elemento1, .elemento2, .elemento3 {
     flex: 1 200px;
     margin-bottom: 3rem;
-    background-color: rgb(120, 144, 240, .6);
+    background-color: rgb(70, 104, 241, .6);
     opacity: 0.8;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -273,7 +281,7 @@ h1{
 /* Eventos */
 h2{
     font-size: 1.5rem;
-    color:#7890F0;
+    color:#4668F1;
 }
 .eventos, .eventos{
     display: grid;
@@ -314,7 +322,7 @@ h2{
     border: 0.5px solid black;
 }
 .evento:hover{
-    background-color: #7890F0;
+    background-color: #4668F1;
 }
 .evento:hover p{
     color: white;
@@ -354,14 +362,14 @@ h2{
     margin-top: 1rem;
 }
 .center a:hover{
-    background-color:  #7890F0;
+    background-color:  #4668F1;
     border:  white solid 0.2px;
     color:  white;
 } 
 
 /* Footer */
 .section-footer {
-    background-color:#7890F0;
+    background-color:#4668F1;
 }
 .content-footer{
     color: white;
@@ -494,7 +502,7 @@ p#hiddenMessage {
     box-shadow: none;  
 }
 .categoria2, .categoria2:hover{
-    background-color: #7890F0;
+    background-color: #4668F1;
     box-shadow: none;   
 }
 .categoria3, .categoria3:hover{
@@ -545,7 +553,7 @@ p#hiddenMessage {
 }
 
 .eventos .categoria1:hover{
-    background-color: #7890F0;
+    background-color: #4668F1;
     color: white;
     border: none;
 }
@@ -557,7 +565,7 @@ p#hiddenMessage {
 .expo h1 {
     font-family: "Afacad Flux", sans-serif;
     font-size: 2rem;
-    color: #7890F0;
+    color: #4668F1;
     margin-bottom: 1rem;
 }
 .expo h2 {
@@ -609,7 +617,7 @@ blockquote p {
     font-weight: 400;
 }
 .expo-form{
-    background-color: #7890F0;
+    background-color: #4668F1;
     color: white;
     border-radius: 21px;
     padding: 2rem;
@@ -737,6 +745,7 @@ article li {
     }
     .datos-contacto{
         justify-content: flex-start;
+        margin-bottom: 0rem;
     }
     .redes-sociales{
         text-align: right;
@@ -778,7 +787,7 @@ article li {
     .expo h1{
         font-family: "Afacad Flux", sans-serif;
         font-size: 2rem;
-        color: #7890F0;
+        color: #4668F1;
     }
     .expo h2{
         font-size: 24px;
@@ -840,7 +849,8 @@ article li {
         color: black; 
     }
     nav li a{
-        color:white;
+        font-weight: 400;
+        color: black;
     }
     nav li a:hover{
         color:black;
@@ -856,7 +866,7 @@ article li {
         padding: 0 2rem 0 2rem;
     }
     li.social{
-        background-color:#7890F0;
+        background-color:#4668F1;
         margin: 0;
         padding: 0 2rem 0 2rem;
     }
@@ -937,7 +947,7 @@ article li {
     }
     
     .category .categoria2:hover {
-        background-color: #7890F0;
+        background-color: #4668F1;
         clip-path: polygon(0% 100%, 0% 2%, 15% 0%, 100% 8%, 100% 100%);
     }
     

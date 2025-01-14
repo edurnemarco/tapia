@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tapia</title>
-    <meta name="description" content="Página principal del ayuntamiento de Tapia de Casariego">
+    <title>Tapia - Cultura</title>
+    <meta name="description" content="Página de la categoría cultura">
     <meta name="author" content="Edurne Marco García">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@600&display=swap" as="style" />
+    <link rel="preload" href="img/tapia-fondo.jpg" as="image" media="(min-width: 600)">
+    <link rel="preload" href="img/tapia-fondo-movil.jpg" as="image" media="(max-width: 600)">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="img/favicon.svg" type="image/png">
 </head>
@@ -28,16 +28,16 @@
                     </div>
                 </div>
                 <div class="redes-sociales">
-                    <a href="https://www.facebook.com/tapia" target="_blank"><img src="img/facebook.svg" alt="Link to Facebook" width="15" height="15"></a>
-                    <a href="https://www.instagram.com/@tapia" target="_blank"><img src="img/instagram.svg" alt="Link to Instagram" width="15" height="15"></a>
+                    <a href="https://www.facebook.com/tapia" target="_blank"><img src="img/facebook.svg" alt="Link to Facebook" width="18" height="18"></a>
+                    <a href="https://www.instagram.com/@tapia" target="_blank"><img src="img/instagram.svg" alt="Link to Instagram" width="18" height="18"></a>
                 </div>
             </div>
         </div>
         <div class="logo-menu">
-          <a href="index.html"><img src="img/tapia-negro.svg" height="30" alt="logotipo de Tapia que redirigue a la página principal"></a>
+          <a href="index.html"><img src="img/tapia-negro.svg" height="30" width="80" alt="logotipo de Tapia que redirigue a la página principal"></a>
           <input aria-hidden="true" type="checkbox" id="menustate">
           <nav>
-              <label for="menustate" aria-hidden="true">
+              <label for="menustate">
                   <span class="open" title="open menu">
                       <a role="button" class="open" href="#menustate">
                           <span></span>
@@ -184,7 +184,7 @@
                         <p>SUBSCRíBETE AL BOLETÍN INFORMATIVO</p>
                         <form action="#" method="post">
                             <input type="email" class="email" placeholder="Tu correo electrónico">
-                            <button class="submit"><img src="img/arrow.-right.svg" title="enviar"></button>
+                            <button class="submit"><img src="img/arrow.-right.svg" height="15" width="15" title="enviar"></button>
                         </form>
                         <div class="enlaces">
                             <a href="index.html">Inicio</a>
@@ -195,7 +195,7 @@
                         </div>
                     </div>
                     <div class="logo">
-                        <img src="img/tapia-blanco.svg" height="80" alt="Logotipo Tapia de Casariego">
+                        <img src="img/tapia-blanco.svg" height="80" width="210" alt="Logotipo Tapia de Casariego">
                         <p>Teléfono atención al ciudadano <a href="tel:(34)0559415941">(34) 05 59 41 59 41</a></p>
                         <p>Correo atención al ciudadano <a href=mailto:info@tapia.es>info@tapia.es</a></p>
                     </div>
